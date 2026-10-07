@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alejandro Ramírez Guzmán</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Didact+Gothic&display=swap">
+<style>
+/* Layout: una columna tipo hoja de CV, encabezados mono centrados con línea, igual que el Word */
+:root {
+  --bg: #f6f6f3; --paper: #ffffff; --fg: #23262b; --muted: #5d636b; --rule: #b9bdc2; --accent: #1f4e79;
+  --mono: "Courier Prime", "Courier New", Courier, monospace;
+  --body: "Didact Gothic", "Century Gothic", "Avenir", "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #15171a; --paper: #1d2024; --fg: #e4e6e9; --muted: #a2a8b0; --rule: #454a51; --accent: #8fb8e0; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #15171a; --paper: #1d2024; --fg: #e4e6e9; --muted: #a2a8b0; --rule: #454a51; --accent: #8fb8e0; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.55; padding: 24px 16px; }
+main { max-width: 820px; margin: 0 auto; background: var(--paper); padding: clamp(24px, 5vw, 56px); display: grid; gap: 8px; }
+h1 { font-family: var(--mono); font-weight: 400; font-size: clamp(1.4rem, 4.6vw, 2.4rem); letter-spacing: .12em; text-align: center; margin: 0; text-wrap: balance; }
+.contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 18px; color: var(--muted); font-size: .85rem; }
+.contact span { user-select: all; }
+h2 { display: flex; align-items: center; gap: 14px; font-family: var(--mono); font-size: 1.1rem; margin: 28px 0 8px; }
+h2::before, h2::after { content: ""; flex: 1; border-top: 1px solid var(--rule); }
+p.summary { text-align: center; margin: 0 auto; max-width: 68ch; }
+.job { display: grid; gap: 4px; margin-bottom: 18px; }
+.job header { text-align: center; }
+.job strong { color: var(--accent); }
+.job .meta { color: var(--muted); font-variant-numeric: tabular-nums; }
+ul { margin: 0; padding-left: 1.2em; }
+li { margin: 2px 0; }
+li.tech { color: var(--muted); }
+.skills { columns: 2; column-gap: 32px; }
+.skills li { break-inside: avoid; }
+.edu { text-align: center; display: grid; gap: 14px; }
+.edu div { display: grid; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+@media (max-width: 480px) { .skills { columns: 1; } }
+</style>
+</head>
+<body>
+
+<main>
+  <h1>ALEJANDRO ANTONIO RAMIREZ GUZMAN</h1>
+  <div class="contact"><span>ramirez_guzman@hotmail.com</span><span>San Martín, San Salvador</span></div>
+
+  <h2>Resumen</h2>
+  <p class="summary">Con años de experiencia en la gestión y el desarrollo de sistemas, he sido capaz de adaptarme a los diferentes planes informáticos de las empresas para las que he trabajado. Adicionalmente, cuento con una gran capacidad de análisis de la información y experiencia en trabajo en equipo e individual. Mi objetivo principal es desarrollarme profesionalmente y evolucionar en mi sector, de modo que busco oportunidades que me permitan hacerlo, al tiempo que trataré de alinearme completamente con los objetivos de la empresa. Me encanta la tecnología y el hecho de servir en una empresa con lo que me apasiona hace que mi actitud siempre sobresalga.</p>
+
+  <h2>Experiencia</h2>
+
+  <section class="job">
+    <header><strong>Desarrollador de software</strong> | Grupo CostadelSol Internacional | <span class="meta">02/2025 – Actualmente</span></header>
+    <ul>
+      <li>Desarrollo y administración de extensiones utilizando AL y Visual Studio Code</li>
+      <li>Desarrollo de Tables, Pages, Codeunits, Reports y APIs</li>
+      <li>Integración de Business Central con sistemas externos mediante APIs REST y OData</li>
+      <li>Consumo y exposición de servicios OData/API para intercambio de información</li>
+      <li>Instalación, configuración, administración y despliegue de Business Central On-Premises</li>
+      <li>Desarrollo de soluciones personalizadas, mantenimiento evolutivo y soporte técnico de Business Central</li>
+      <li class="tech">Tecnologías usadas: Microsoft Dynamics 365 Business Central, AL, Visual Studio Code, APIs REST, OData</li>
+    </ul>
+  </section>
+
+  <section class="job">
+    <header><strong>Analista Programador</strong> | INDUFOAM | <span class="meta">01/2023 – 02/2025</span></header>
+    <ul>
+      <li>Encargado de análisis y desarrollo para los sistemas</li>
+      <li>Administrar las BD de los sistemas en motores de SQL Server y MySQL</li>
+      <li>Encargado de realizar reportes con Crystal Reports y Reporting Services</li>
+      <li>Soporte a las aplicaciones de clientes internos</li>
+      <li>Integraciones con ERP SAP</li>
+      <li>Proyectos de desarrollo: modificación de la integración de WMS a SAP, proyecto de servidor de colas de impresión para documentos tipo facturas, créditos fiscales, notas de remisión, etc.</li>
+      <li class="tech">Tecnologías usadas: SQL, C#, Visual Basic, .NET, MySQL</li>
+    </ul>
+  </section>
+
+  <section class="job">
+    <header><strong>Desarrollador de software</strong> | Crio Inversiones | <span class="meta">07/2019 – 01/2023</span></header>
+    <ul>
+      <li>Encargado de análisis y desarrollo para los sistemas</li>
+      <li>Administrar las BD de los sistemas en motores de SQL Server, Oracle y MySQL</li>
+      <li>Encargado de realizar reportes con Crystal Reports</li>
+      <li>Creación y actualización de tableros estadísticos con Power BI</li>
+      <li>Analista de nuevos proyectos de tecnología</li>
+      <li>Creación y aplicación de APIs en C#</li>
+      <li>Proyectos de desarrollo: creación de API para productos utilizados en el sitio <a href="https://labarrica.com/">labarrica.com</a>, API para consumo de sistema de pedidos desde móvil (Preventa Lite) a ERP SIGES, creación de módulos de cheques, órdenes de compra, proformas y cotizaciones de sistema interno basado en escritorio</li>
+      <li class="tech">Tecnologías usadas: SQL, PL/SQL, C#, Visual Basic, .NET</li>
+    </ul>
+  </section>
+
+  <section class="job">
+    <header><strong>Especialista en Helpdesk</strong> | Dollarcity | <span class="meta">11/2017 – 07/2019</span></header>
+    <ul>
+      <li>Soporte y resolución de problemas a usuarios finales</li>
+      <li>Mantenimiento de base de datos</li>
+      <li>Administrador del Active Directory</li>
+      <li>Consola Office 365 y ServiceNow</li>
+      <li>Manejo de inventario de equipo informático</li>
+      <li>Implementador de proyectos y servicio IT</li>
+      <li>Participación en proyectos de Active Directory, SCCM, DFS</li>
+      <li>Implementación de BAC Credomatic a Dynamics RMS</li>
+      <li>Motivo de retiro: mejora profesional y salarial</li>
+      <li>Proyectos de desarrollo: sistema para captación de datos a usuario para viajes a otros países, API para interfaz entre sistema de tickets ServiceNow, sistema de control de accesos y sistema de viajes</li>
+      <li class="tech">Tecnologías usadas: SQL, C#, PHP</li>
+    </ul>
+  </section>
+
+  <section class="job">
+    <header><strong>Soporte Técnico</strong> | Supradev | <span class="meta">03/2016 – 11/2017</span></header>
+    <ul>
+      <li>Soporte técnico a otras empresas como outsourcing</li>
+      <li>Uso de SQL Server con Transact-SQL para sistemas internos</li>
+      <li>Monitorización de enlaces de red</li>
+      <li>Encargado de la instalación del ERP Brilo para otras empresas</li>
+      <li>Creación de backups y administración de servidores</li>
+      <li>Configuraciones de cuentas de correo</li>
+      <li>Motivo de retiro: mejora profesional y salarial</li>
+      <li>Proyectos de desarrollo: refactorización de sistema de entradas y salidas del personal, implementación de ERP Brilo</li>
+      <li class="tech">Tecnologías usadas: SQL, PHP, .NET</li>
+    </ul>
+  </section>
+
+  <h2>Habilidades Técnicas</h2>
+  <ul class="skills">
+    <li>T-SQL</li><li>PL/SQL</li><li>C#</li><li>Visual Basic .NET</li><li>ASP .NET</li><li>PHP</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>MySQL</li><li>SQL Server</li><li>Dynamics 365 Business Central / AL</li>
+    <li>Oracle</li><li>SQLite</li><li>Angular</li><li>React</li><li>Agile</li><li>Design Thinking</li><li>Patrón por Capas</li><li>Cliente Servidor</li><li>MVC</li><li>Power BI</li><li>Tableau</li>
+  </ul>
+
+  <h2>Educación</h2>
+  <div class="edu">
+    <div><strong>EUDE Business School | 12/2020</strong><span>Máster en Administración de Empresas (MBA)</span></div>
+    <div><strong>Universidad Cristiana de las Asambleas de Dios | 12/2016</strong><span>Ingeniería en Ciencias de la Computación</span></div>
+  </div>
+</main>
+</body>
+</html>
